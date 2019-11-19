@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first.FirstActovity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="第一个页面"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="按钮1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:onClick="btnClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入一些内容"
+            android:maxLines="1"/>
+        <Button
+            android:id="@+id/getEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取输入值"
+            android:onClick="getEdit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 正在旋转的圆形进度条 -->
+        <ProgressBar
+            android:id="@+id/progress_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/setPro_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增大"/>
+
+            <Button
+                android:id="@+id/setPro_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减少" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
